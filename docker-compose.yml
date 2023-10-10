@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  oppie:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: oppie
+    ports:
+      - "11434:11434"
+

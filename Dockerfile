@@ -4,5 +4,6 @@ COPY /config /config
 WORKDIR /config
 RUN pip install -r requirements.txt
 COPY /src /src
+COPY /config/.env /src/.env
 WORKDIR /src
 CMD ["python", "hello.py"]
