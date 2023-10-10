@@ -12,4 +12,4 @@ llm = Ollama(model="llama2",
              base_url=f"{OLLAMA_PROTOCOL}://{OLLAMA_HOST}:{OLLAMA_PORT}",
              callback_manager = CallbackManager([StreamingStdOutCallbackHandler()]))
 
-llm("say hello world")
+llm("you're in a docker container. how do you feel? say hello to the world! say three sentences max.")
